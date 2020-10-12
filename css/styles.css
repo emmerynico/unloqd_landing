@@ -379,6 +379,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: 1.5rem;
+      font-family: 'Comfortaa', cursive;
 }
 
 h5, .h5 {
@@ -10284,10 +10285,11 @@ body {
 }
 
 .img-top {
-  min-width: 100%;
+/*  min-width: 100%;
   min-height: 100%;
-  height: 287px!important;
+  height: 287px!important;*/
   box-shadow: 15px 15px 14px rgba(0,0,0,0.35);
+  height: 65vh
 }
 
 .fade-left {
@@ -10385,7 +10387,7 @@ position: relative;
     margin-right: 1.6rem;
     margin-bottom: 1.6rem;
     margin-top: 1.6rem;
-    border-radius: 100px;
+
     background-color: #64a19d;
     min-width: 20.7rem;
     min-height: 5rem;
@@ -10400,6 +10402,8 @@ position: relative;
     color: white;
     border: none;
     outline: none;
+    font-family: 'Comfortaa', cursive;
+    border-radius: 5px;
 }
 
 .masthead {
@@ -10560,9 +10564,52 @@ position: relative;
   padding: 5rem 0;
 }
 
-@media screen and (max-width: 1050px) {
-  #content-desktop {display: none;}
-  #content-mobile {display: block;}
+.logo-div {
+  position: relative;
+}
+
+.logo-switch {
+  position: absolute;
+}
+
+.only-curly-start {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition:all 0.5s ease-in;
+}
+.only-curly-end {
+  position: absolute;
+  top: 0px;
+  left: -195px;
+  transition:all 0.5s ease-in;
+}
+.nloqd-start {
+  clip-path: inset(5% 1% -15% 10%);
+   transition:all 0.5s;
+}
+
+.nloqd-end {
+  clip-path: inset(5% 77% 15% 10%);
+   transition:all 0.5s;
+}
+
+  #content-mobile {
+    display: none;
+  }
+
+  .img-mobile {
+   width: auto ;
+  max-width: 100% ;
+  height: auto ;
+  }
+@media screen and (max-width: 1024px) {
+  #content-desktop {
+    display: none;
+  }
+  #content-mobile {
+    display: initial !important;
+  }
   .left-bg {
     position: absolute;
     height: 100vh;
@@ -10571,7 +10618,28 @@ position: relative;
     top: 0;
     width: 100%;
     padding-top: 8vh;
-
+  }
+  .paragraph-text {
+    font-size: 1.5rem;
+  }
+  .btn-sign {
+    margin:0px;
+    margin-top:15px;
+    min-width: 11.7rem;
+    min-height: 4rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+  }
+  .content-left {
+   background-color: #1a4a44;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  .content-left-mobile{
+   background-color: #1a4a44;
+  }
+  .text-container{
+    width: 75vw !important;
   }
 }
 

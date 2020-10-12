@@ -1,13 +1,53 @@
 window.onscroll = function() {scrollFunction()};
 
-let logo = document.querySelector(".logoSwitch")
-console.log(logo)
+let logo = document.querySelector(".logo-switch")
+let curly = document.querySelector(".curly")
+let nloqd = document.querySelector(".nloqd")
 let clientHeight = window.innerHeight
+curly.style.transition = "all 0.5s";
+nloqd.style.transition = "all 0.5s";
 
 function scrollFunction() {
-if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-  logo.src = "assets/img/logo.png";
+if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+  // logo.src = "assets/img/logo.png";
+  curly.classList.remove("only-curly-start");
+  curly.classList.add("only-curly-end");
+  nloqd.classList.add("nloqd-end");
+  nloqd.classList.remove("nloqd-start");
 } else {
-  logo.src = "assets/img/logo_full.png";
+  // logo.src = "assets/img/logo_full.png";
+  curly.classList.remove("only-curly-end");
+  curly.classList.add("only-curly-start");
+  nloqd.classList.add("nloqd-start");
+  nloqd.classList.remove("nloqd-end");
+  }
+
 }
-}
+
+let uSelect = document.querySelector(".u_logo")
+console.log(uSelect)
+uSelect.addEventListener("mouseenter", function( event ) {
+  console.log("coucou")
+   curly.classList.remove("only-curly-end");
+  curly.classList.add("only-curly-start");
+  nloqd.classList.add("nloqd-start");
+  nloqd.classList.remove("nloqd-end");
+})
+
+console.log(uSelect)
+uSelect.addEventListener("mouseleave", function( event ) {
+  curly.classList.remove("only-curly-start");
+  curly.classList.add("only-curly-end");
+  nloqd.classList.add("nloqd-end");
+  nloqd.classList.remove("nloqd-start");
+})
+
+
+
+
+
+
+
+
+
+
