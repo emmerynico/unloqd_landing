@@ -10560,6 +10560,37 @@ position: relative;
   padding: 5rem 0;
 }
 
+.logo-div {
+  position: relative;
+}
+
+.logo-switch {
+  position: absolute;
+}
+
+.only-curly-start {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition:all 0.5s ease-in;
+}
+.only-curly-end {
+  position: absolute;
+  top: 0px;
+  left: -195px;
+  transition:all 0.5s ease-in;
+}
+.nloqd-start {
+  clip-path: inset(5% 1% -15% 10%);
+   transition:all 1.5s;
+}
+
+.nloqd-end {
+  clip-path: inset(5% 77% 15% 10%);
+   transition:all 1.5s;
+}
+
+
 @media screen and (max-width: 1050px) {
   #content-desktop {display: none;}
   #content-mobile {display: block;}
