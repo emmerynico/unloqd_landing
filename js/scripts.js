@@ -1,8 +1,4 @@
-/*!
-    * Start Bootstrap - Grayscale v6.0.2 (https://startbootstrap.com/themes/grayscale)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-    */
+
     (function ($) {
     "use strict"; // Start of use strict
 
@@ -40,10 +36,10 @@
         target: "#mainNav",
         offset: 100,
     });
-
+    let clientHeight = window.innerHeight
     // Collapse Navbar
     var navbarCollapse = function () {
-        if ($("#mainNav").offset().top > 100) {
+        if ($("#mainNav").offset().top > clientHeight) {
             $("#mainNav").addClass("navbar-shrink");
         } else {
             $("#mainNav").removeClass("navbar-shrink");
