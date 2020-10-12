@@ -4,8 +4,8 @@ let logo = document.querySelector(".logo-switch")
 let curly = document.querySelector(".curly")
 let nloqd = document.querySelector(".nloqd")
 let clientHeight = window.innerHeight
-// curly.style.transition = "all 0.5s";
-// nloqd.style.transition = "all 0.5s";
+curly.style.transition = "all 0.5s";
+nloqd.style.transition = "all 0.5s";
 
 function scrollFunction() {
 if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
