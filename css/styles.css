@@ -10708,8 +10708,10 @@ position: relative;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-
   background-position-x: right;
+}
+.content-left {
+  padding-left: 3px;
 }
 }
 
