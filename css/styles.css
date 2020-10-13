@@ -10002,6 +10002,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .text-black {
   color: #000000 !important;
+
 }
 
 a.text-black:hover, a.text-black:focus {
@@ -10502,7 +10503,7 @@ position: relative;
 }
 .projects-section .project-text {
   padding: 3rem;
-  font-size: 90%;
+  font-size: 100%;
 }
 @media (min-width: 992px) {
   .projects-section .project-text {
@@ -10636,7 +10637,7 @@ position: relative;
   }
 
   li {
-    font-size: 14px;
+    font-size: 15px;
     line-height:23px;
   }
 
