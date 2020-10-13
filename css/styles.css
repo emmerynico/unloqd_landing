@@ -7508,6 +7508,13 @@ button.bg-black:focus {
   left: 0;
   z-index: 1030;
 }
+.fixed-top-mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
 
 .fixed-bottom {
   position: fixed;
@@ -10256,6 +10263,8 @@ body {
   top: 0;
   width: 50%;
   background-color: #17453f;
+  background-color:rgb(255,255,255);
+  border-right: solid 2px #65A09D;
 }
 
 .right-bg {
@@ -10306,9 +10315,9 @@ body {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-box-align: center;
+/*    -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: center;*/
     padding-top: 4.4rem;
     text-align: left;
     -webkit-box-orient: vertical;
@@ -10316,23 +10325,27 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     color: #64a19d !important;
+    padding-left: 0rem;
 }
 
 .paragraph-text {
-    font-size: 2.5rem;
+
     font-weight: 400;
     font-stretch: normal;
     font-style: normal;
     font-family: relative-faux;
     line-height: 1;
     letter-spacing: .72px;
-    color: white;
+    color: grey;
     padding-top: 15px;
+    color:rgb(50,50,50);
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 
 }
 .text-left {
     display: flex;
-    max-width: 60%;
+    max-width: 65%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -10375,35 +10388,36 @@ position: relative;
   display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
+/*    -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: center;*/
     width: 100%;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    justify-content:left;
 }
 
 .btn-sign {
     margin-right: 1.6rem;
     margin-bottom: 1.6rem;
     margin-top: 1.6rem;
-
-    background-color: #64a19d;
-    min-width: 20.7rem;
-    min-height: 5rem;
-    max-width: 20.7rem;
-    max-height: 5rem;
-    font-size: 2.5rem;
+    background-color: transparent;
+    min-width: 8.7rem;
+    min-height: 3rem;
+    max-width: 8  .7rem;
+    max-height: 3rem;
+    font-size: 1.5rem;
     font-weight: 700;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.07;
     letter-spacing: .15px;
-    color: white;
+    color: #64a19d;
     border: none;
     outline: none;
     font-family: 'Comfortaa', cursive;
     border-radius: 5px;
+    border:solid 2px #64a19d;
 }
 
 .masthead {
@@ -10411,15 +10425,13 @@ position: relative;
   width: 100%;
   height: auto;
   min-height: 35rem;
-  /*padding: 15rem 0;*/
-  /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0.9) 100%), url("../assets/img/bg-masthead.jpg");*/
-  /*background: url("../assets/img/bg-masthead.jpg");*/
+  background: url("../assets/img/demo-image-00.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  filter: brightness(5);
-  filter: contrast(1);
+  filter: brightness(1);
+  filter: contrast(1.1);
 }
 
 
@@ -10477,6 +10489,7 @@ position: relative;
 
 .projects-section {
   padding: 10rem 0;
+  padding-bottom: 1rem;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -10484,7 +10497,7 @@ position: relative;
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 3px solid #64a19d;
   }
 }
 .projects-section .project-text {
@@ -10503,9 +10516,9 @@ position: relative;
 }
 
 .signup-section {
-  padding: 10rem 0;
-  background: url("../assets/img/bg-signup.png");
-  /*background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 75%, #ffffffff 100%), url("../assets/img/bg-signupTEST.jpg");*/
+  padding: 5rem 0;
+  /*background: url("../assets/img/bg-signup.png");*/
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 75%, #ffffffff 100%), url("../assets/img/bg-signupTEST.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10603,6 +10616,44 @@ position: relative;
   max-width: 100% ;
   height: auto ;
   }
+
+  .parent-container {
+    position: relative;
+  }
+
+  .hand-font {
+    font-family: 'Allura', cursive;
+    font-size: 35px;
+    text-align: right;
+    padding-right: 2rem;
+  }
+
+  .list-formations {
+    padding: 0px !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    margin-top: 3rem !important;
+  }
+
+  li {
+    font-size: 14px;
+    line-height:23px;
+  }
+
+  ul {
+    padding-inline-start: 22px;
+  }
+
+  .text-lg-right {
+    text-align: left !important;
+}
+
+.formation_desript {
+    padding: 0px !important;
+    padding-left: 2rem !important;
+    padding-right: 0rem !important;
+    margin-top: 2rem !important;
+}
 @media screen and (max-width: 1024px) {
   #content-desktop {
     display: none;
@@ -10625,22 +10676,43 @@ position: relative;
   .btn-sign {
     margin:0px;
     margin-top:15px;
-    min-width: 11.7rem;
-    min-height: 4rem;
+    min-width: 8.7rem;
+    min-height: 3rem;
     font-size: 1.2rem;
     border-radius: 5px;
+    margin-bottom: 25px;
   }
   .content-left {
-   background-color: #1a4a44;
-    padding-bottom: 2rem;
+    padding-left: 33px;
+    padding-top: 4rem !important;
     padding-top: 2rem;
   }
   .content-left-mobile{
-   background-color: #1a4a44;
+
   }
   .text-container{
-    width: 75vw !important;
+    width: 50vw !important;
   }
+
+  .formation_desript {
+    padding-left: 0rem !important;
+  }
+
+  .masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  background: url("../assets/img/mailys_mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position-x: right;
+}
+.content-left {
+  padding-left: 3px;
+}
 }
 
 
