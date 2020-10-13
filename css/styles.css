@@ -10256,6 +10256,8 @@ body {
   top: 0;
   width: 50%;
   background-color: #17453f;
+  background-color:rgb(255,255,255);
+  border-right: solid 2px #65A09D;
 }
 
 .right-bg {
@@ -10328,6 +10330,7 @@ body {
     letter-spacing: .72px;
     color: white;
     padding-top: 15px;
+    color:rgb(50,50,50);
 
 }
 .text-left {
@@ -10388,7 +10391,7 @@ position: relative;
     margin-bottom: 1.6rem;
     margin-top: 1.6rem;
 
-    background-color: #64a19d;
+    background-color: transparent;
     min-width: 20.7rem;
     min-height: 5rem;
     max-width: 20.7rem;
@@ -10399,11 +10402,12 @@ position: relative;
     font-style: normal;
     line-height: 1.07;
     letter-spacing: .15px;
-    color: white;
+    color: #64a19d;
     border: none;
     outline: none;
     font-family: 'Comfortaa', cursive;
     border-radius: 5px;
+    border:solid 2px #64a19d;
 }
 
 .masthead {
@@ -10484,7 +10488,7 @@ position: relative;
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 3px solid #64a19d;
   }
 }
 .projects-section .project-text {
@@ -10603,6 +10607,21 @@ position: relative;
   max-width: 100% ;
   height: auto ;
   }
+
+  .vertical-line {
+      border-left: 6px solid green;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+  z-index: -0;
+  }
+
+  .parent-container {
+    position: relative;
+  }
+
 @media screen and (max-width: 1024px) {
   #content-desktop {
     display: none;
