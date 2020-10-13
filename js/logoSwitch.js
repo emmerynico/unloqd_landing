@@ -21,26 +21,23 @@ if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
   nloqd.classList.add("nloqd-start");
   nloqd.classList.remove("nloqd-end");
   }
-
 }
 
+
 let uSelect = document.querySelector(".u_logo")
-console.log(uSelect)
-uSelect.addEventListener("mouseenter", function( event ) {
-  console.log("coucou")
-   curly.classList.remove("only-curly-end");
+
+  uSelect.addEventListener("mouseenter", function( event ) {
+  curly.classList.remove("only-curly-end");
   curly.classList.add("only-curly-start");
   nloqd.classList.add("nloqd-start");
   nloqd.classList.remove("nloqd-end");
-})
-
-console.log(uSelect)
-uSelect.addEventListener("mouseleave", function( event ) {
-  curly.classList.remove("only-curly-start");
-  curly.classList.add("only-curly-end");
-  nloqd.classList.add("nloqd-end");
-  nloqd.classList.remove("nloqd-start");
-})
+  })
+  uSelect.addEventListener("mouseleave", function( event ) {
+    curly.classList.remove("only-curly-start");
+    curly.classList.add("only-curly-end");
+    nloqd.classList.add("nloqd-end");
+    nloqd.classList.remove("nloqd-start");
+  })
 
 
 
