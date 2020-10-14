@@ -6294,7 +6294,8 @@ button.bg-dark:focus {
 }
 
 .bg-black {
-  background-color: #000000 !important;
+  /*background-color: #000000 !important;*/
+  background-color: #3c4040 !important
 }
 
 a.bg-black:hover, a.bg-black:focus,
@@ -10002,6 +10003,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .text-black {
   color: #000000 !important;
+
 }
 
 a.text-black:hover, a.text-black:focus {
@@ -10147,7 +10149,7 @@ h3 {
   }
 }
 body {
-  letter-spacing: 0.0625em;
+  /*letter-spacing: 0.0625em;*/
 }
 
 #mainNav {
@@ -10502,7 +10504,7 @@ position: relative;
 }
 .projects-section .project-text {
   padding: 3rem;
-  font-size: 90%;
+  font-size: 100%;
 }
 @media (min-width: 992px) {
   .projects-section .project-text {
@@ -10636,8 +10638,8 @@ position: relative;
   }
 
   li {
-    font-size: 14px;
-    line-height:23px;
+    font-size: 15px;
+    line-height:24px;
   }
 
   ul {
@@ -10652,7 +10654,7 @@ position: relative;
     padding: 0px !important;
     padding-left: 2rem !important;
     padding-right: 0rem !important;
-    margin-top: 2rem !important;
+    margin-top: 0rem !important;
 }
 @media screen and (max-width: 1024px) {
   #content-desktop {
@@ -10696,6 +10698,8 @@ position: relative;
 
   .formation_desript {
     padding-left: 0rem !important;
+    margin-top: 2rem !important;
+
   }
 
   .masthead {
