@@ -10656,6 +10656,18 @@ position: relative;
     padding-right: 0rem !important;
     margin-top: 0rem !important;
 }
+
+.form-signup-valid {
+  background-color: rgba(133, 200, 161,1) !important;
+  border: solid 1px green !important;
+}
+.btn-signup-valid {
+  background-color: rgba(133, 200, 161,1) !important;
+}
+.btn.disabled, .btn:disabled {
+    opacity: 1;
+  }
+
 @media screen and (max-width: 1024px) {
   #content-desktop {
     display: none;
