@@ -208,18 +208,25 @@
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                         <h2 class="text-black mb-5">Inscris-toi pour recevoir nos updates!</h2>
-                        <form class="form-inline d-flex">
-                            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Ton adresse mail..." />
+                        <form name="submit-to-google-sheet" class="form-inline d-flex">
+                            <input name="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Ton adresse mail..." />
                             <button class="btn btn-primary mx-auto" type="submit">M'inscrire</button>
                         </form>
                     </div>
                 </div>
-
-
-
-
-
             </div>
+
+            <script>
+              const scriptURL = 'https://script.google.com/macros/s/AKfycbyXU87_CYk-K2uZa_evuv6MYYMGSfAzs9Xcm7HAwMlYu2n0RER-/exec'
+              const form = document.forms['submit-to-google-sheet']
+            
+              form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                  .then(response => console.log('Success!', response))
+                  .catch(error => console.error('Error!', error.message))
+              })
+            </script>
         </section>
         <!-- Contact-->
         <section class="contact-section bg-black">
