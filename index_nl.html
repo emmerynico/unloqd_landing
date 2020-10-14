@@ -80,7 +80,7 @@
                       <div class="title-div-b" style="padding-top:50px;">
                       </div>
                       <h4 class="" style="font-size:45px;">Jouw website <br>in 1 dag!</h4>
-                      <p class="text-black-50 mb-0" style="font-size:20px; ">Droom je ervan om je eigen website te hebben of deze zelf te ontwikkelen, 
+                      <p class="text-black-50 mb-0" style="font-size:20px; ">Droom je ervan om je eigen website te hebben of deze zelf te ontwikkelen,
                         volgens de hedendaagse normen? Dan is deze praktijkgerichte workshop zeker iets voor jou!
                       </p>
                     </div>
@@ -135,10 +135,10 @@
                                       </ul>
                                       <br>
                                        <p class="mb-0 text-black-50">
-                                        Jouw website wordt ontwikkeld op een CMS, die intuïtief aanvoelt en een reeds bewezen track record heeft. Je kan dus jouw eigen website ontwikkelen, onderhouden en beheren, zonder enige voorkennis van het coderen! 
+                                        Jouw website wordt ontwikkeld op een CMS, die intuïtief aanvoelt en een reeds bewezen track record heeft. Je kan dus jouw eigen website ontwikkelen, onderhouden en beheren, zonder enige voorkennis van het coderen!
                                         Je kan je verwachten aan een opleiding die aangepast is aan de noden en wensen van eenieder, zonder vereiste voorkennis. Het enige wat we van je verlangen is een goed humeur en de nodige motivatie!
-                                      <br> <br>Prijs: €250 excl. BTW (lunch en drankje inbegrepen). 
-                                      Mee te brengen: laptop (indien je hier niet over beschikt, gelieve ons dan vooraf op de hoogte te brengen. Zo kunnen we samen een oplossing zoeken!) 
+                                      <br> <br>Prijs: €250 excl. BTW (lunch en drankje inbegrepen).
+                                      Mee te brengen: laptop (indien je hier niet over beschikt, gelieve ons dan vooraf op de hoogte te brengen. Zo kunnen we samen een oplossing zoeken!)
                                     </p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
 
@@ -161,7 +161,7 @@
                                       <li>12 November - <!-- Wavre - --> Rue Haute 13 in 1300 <b>Wavre</b> (FR)</li>
                                       <li>17 November - <!-- Namur - --> Rue de Fer 62 in 5000 <b>Namur</b> (FR)</li>
                                       <li>19 November - <!-- Bruxelles - --> Rue du Midi  19 -21 in 1000 <b>Bruxelles</b> (FR)</li>
-                                      <li>24 November - <!-- Vilvoorde - --> Luchthavenlaan 10 in 1800 <b>Vilvoorde</b> (FR)</li>
+                                      <!-- <li>24 November -  Vilvoorde -  Luchthavenlaan 10 in 1800 <b>Vilvoorde</b> (FR)</li> -->
                                       <li>24 November - <!-- Vilvoorde - --> Luchthavenlaan 10 in 1800 <b>Vilvoorde</b> (NL)</li>
                                       <li>26 November - <!-- Leuven - --> Herbert Hooverplein 17 in 3000 <b>Leuven</b> (NL)</li>
                                       <li>1 décembre - <!-- Gent - --> Kortedagsteeg 13 - 15 in 9000 <b>Gent</b> (NL)</li>
@@ -191,10 +191,10 @@
                             <h4>Wie ben ik?</h4>
                             <p class="text-black-50 mb-0">Nadat ik enkele jaren voor een multinational werkte als Strategic 
                               Development Manager voor de Export & Distributie in verschillende landen, besloot ik mijn professionele
-                               carrière een andere wending te geven. Ik besloot mijn droom en interesses achterna te gaan en ontwikkelde 
+                               carrière een andere wending te geven. Ik besloot mijn droom en interesses achterna te gaan en ontwikkelde
                                mezelf binnen de techwereld als web developer en digital marketeer.
-                               Sinds deze nieuwe wending, geef ik ook opleidingen in web development aan volwassenen én workshops robotica en coderen voor kinderen. 
-                               Recent creëerde ik samen met mijn 2 vennoten “Unloqd”, een digital agency, die ontstond uit onze passie en wens om onze kennis te delen 
+                               Sinds deze nieuwe wending, geef ik ook opleidingen in web development aan volwassenen én workshops robotica en coderen voor kinderen.
+                               Recent creëerde ik samen met mijn 2 vennoten “Unloqd”, een digital agency, die ontstond uit onze passie en wens om onze kennis te delen
                                met diegenen die hun aanwezigheid op het web en  sociale media willen verbeteren.
                             </p>
                             <p class="hand-font">Mailys</p>
@@ -212,18 +212,25 @@
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                         <h2 class="text-black mb-5">Registreer voor regelmatige updates!</h2>
-                        <form class="form-inline d-flex">
-                            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Jouw emailadres..." />
-                            <button class="btn btn-primary mx-auto" type="submit">Registreer</button>
+                        <form class="form-inline d-flex" name="submit-to-google-sheet">
+                            <input name="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0 form-signup" id="inputEmail" type="email" placeholder="Jouw emailadres..." required/>
+                            <button class="btn btn-primary mx-auto btn-signup" type="submit">Registreer</button>
                         </form>
                     </div>
                 </div>
-
-
-
-
-
             </div>
+
+            <script>
+              const scriptURL = 'https://script.google.com/macros/s/AKfycbyXU87_CYk-K2uZa_evuv6MYYMGSfAzs9Xcm7HAwMlYu2n0RER-/exec'
+              const form = document.forms['submit-to-google-sheet']
+
+              form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                  .then(response => console.log('Success!', response))
+                  .catch(error => console.error('Error!', error.message))
+              })
+            </script>
         </section>
         <!-- Contact-->
         <section class="contact-section bg-black">
@@ -267,7 +274,7 @@
                 </div>
 
  <div class=" d-flex justify-content-center" style="text-align: right;">
-                   <a  style="font-size: 20px; padding-top: 25px;" href="index.html">Fançais</a>
+                   <a  style="font-size: 20px; padding-top: 25px;" href="index.html">Français</a>
                 </div>
             </div>
         </section>
@@ -282,6 +289,8 @@
         <script src="js/scripts.js"></script>
         <script src="js/logoSwitch.js"></script>
         <script src="js/switchNav.js"></script>
+        <script src="js/btnSign.js"></script>
+
 
           <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

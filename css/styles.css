@@ -6294,7 +6294,8 @@ button.bg-dark:focus {
 }
 
 .bg-black {
-  background-color: #000000 !important;
+  /*background-color: #000000 !important;*/
+  background-color: #3c4040 !important
 }
 
 a.bg-black:hover, a.bg-black:focus,
@@ -10148,7 +10149,7 @@ h3 {
   }
 }
 body {
-  letter-spacing: 0.0625em;
+  /*letter-spacing: 0.0625em;*/
 }
 
 #mainNav {
@@ -10638,7 +10639,7 @@ position: relative;
 
   li {
     font-size: 15px;
-    line-height:23px;
+    line-height:24px;
   }
 
   ul {
@@ -10653,8 +10654,20 @@ position: relative;
     padding: 0px !important;
     padding-left: 2rem !important;
     padding-right: 0rem !important;
-    margin-top: 2rem !important;
+    margin-top: 0rem !important;
 }
+
+.form-signup-valid {
+  background-color: rgba(133, 200, 161,1) !important;
+  border: solid 1px green !important;
+}
+.btn-signup-valid {
+  background-color: rgba(133, 200, 161,1) !important;
+}
+.btn.disabled, .btn:disabled {
+    opacity: 1;
+  }
+
 @media screen and (max-width: 1024px) {
   #content-desktop {
     display: none;
@@ -10697,6 +10710,8 @@ position: relative;
 
   .formation_desript {
     padding-left: 0rem !important;
+    margin-top: 2rem !important;
+
   }
 
   .masthead {
