@@ -10732,3 +10732,19 @@ position: relative;
 }
 
 
+  .corona-alert {
+    color:white;
+    background-color:rgba(200,20,20,0.9);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius:5px;
+  }
+
+  .corona-container{
+    padding-top: 28px;
+    padding-left: 11%;
+    padding-right:11%;
+
+  }
+
+
